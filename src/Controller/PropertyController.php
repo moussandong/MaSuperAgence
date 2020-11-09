@@ -15,7 +15,6 @@ class PropertyController extends AbstractController
      */
     public function index(): Response
     {
-        return new Response($this->twig->render("property/index.html.twig"));
+        return new Response($this->render("property/index.html.twig"));
     }
 }
- 

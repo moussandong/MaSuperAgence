@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use Twig\Environment;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
 
 
 
@@ -19,6 +20,11 @@ class HomeController
     {
         $this->twig = $twig;
     }
+
+    /**
+     * @Route("/", name="home")
+     * @return Response
+     */
 
     public function index(): Response
     {
